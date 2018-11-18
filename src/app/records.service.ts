@@ -14,6 +14,7 @@ export class RecordsService {
   constructor(private http: HttpClient){}
 
   getData(){
-    return this.http.get<myData>("/api/file.json")
+    return this.http.get<myData>("/api/file.php")
+    // return this.http.get<myData>("https://raw.githubusercontent.com/iMansoorAliKhan/ng-app/dev/test/api/file.json");
     }
   }

@@ -18,7 +18,7 @@ export class AppComponent {
   }
   ngOnInit(){
     this.recordSrv.getData().subscribe(data => {
-      return data.records;
+      this.records = data.records;
     });
   }
 }
