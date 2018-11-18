@@ -1,0 +1,20 @@
+<h1>{{title}} </h1>
+
+Data
+
+<table>
+<tr>
+  <td>ID:</td>
+  <td>Name</td>
+  <td>Status</td>
+</tr>
+<tr
+
+*ngFor="let d of records; let i = index; let evenRecord=even; let oddRecord=odd"
+[attr.data-index]="i"
+[ngClass]="{'even': evenRecord,'odd':oddRecord}">
+  <td>{{i+1}}</td>
+  <td>{{d.name}}</td>
+  <td>{{d.online}}</td>
+</tr>
+</table>

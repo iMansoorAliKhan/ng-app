@@ -1,0 +1,27 @@
+tr{
+  border-bottom 1px solid red;
+  display block;
+  background #ececec;
+}
+td{
+  border-right 1px solid red
+  width 35px
+}
+table
+  for col in 1 2 3
+    td:nth-child({col})
+      border none
+  for row in 1 2 3
+    td
+      padding 5px
+
+tr.even
+  border-bottom 1px solid red;
+  display block;
+  background #ececec;
+
+tr.odd
+  border-bottom 1px solid green;
+  display block;
+  background #dddddd;
+
